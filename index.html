@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reticula</title>
+    <style type="text/css">
+        
+        :root{
+            --var: 3px solid black;
+        }
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            background: white;
+        }
+        .element{
+          padding: 1em;
+          border: var(--var);
+        }
+         
+        .container{
+            padding: 2em;
+            display: grid;
+            
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(17, 1fr);
+            grid-auto-rows: 40px;
+           
+        }
+        
+        .ele1{
+        grid-column: 2 span;
+        grid-row: 2 span;
+        background: red;
+        }
+        .ele2{
+            grid-column: 3 span;
+            grid-row: 4 span;
+        }
+        .ele3{
+            grid-column: 3 span;
+            grid-row: 2 span;
+            background: yellow;
+        }
+        .ele4{
+            grid-column: 2 span;
+            grid-row: 2 span;
+        }
+        .ele5{
+            grid-column: 2 span;
+            grid-row: 5 span;
+             }
+        .ele6{
+            grid-row: 2 span;
+            grid-column: 5 span;
+        }
+        .ele7{
+            grid-row: 2 span;
+            grid-column: 5 span;
+        }
+        .ele8{
+            grid-row: 6 span;
+        }
+        .ele9{
+            grid-column: 2 span;
+            grid-row: 4 span;
+        }
+        .ele10{
+            grid-column: 5 span;
+            grid-row: 4 span;
+            background: blue;
+        }
+        .ele11{
+            grid-column: 2 span;
+            grid-row: 2 span;
+            background: yellow;
+        }
+        .ele12{
+            grid-column: 2 span;
+            grid-row: 2 span;
+        }
+        .ele13{
+            grid-row: 3 span;
+            grid-column: 2 span;
+        }
+        .ele14{
+            grid-row: 4 span;
+            grid-column: 3 span;
+            background: red;
+        }
+        .ele15{
+            grid-column: 5 span;
+            grid-row: 3 span;
+        }
+        .ele16{
+            grid-row: 2 span;
+        }
+        .ele17{
+            grid-row: 2 span;
+        }
+        .ele18{
+            grid-column: 4 span;
+        }
+        .ele19{
+            background: blue;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+      <div class="element ele1">1</div>
+      <div class="element ele2">2</div>
+      <div class="element ele3">3</div>
+      <div class="element ele4">4</div>
+      <div class="element ele5">5</div>
+      <div class="element ele6">6</div>
+      <div class="element ele7">7</div>
+      <div class="element ele8">8</div>
+      <div class="element ele9">9</div>
+      <div class="element ele10">10</div>
+      <div class="element ele11">11</div>
+      <div class="element ele12">12</div>
+      <div class="element ele13">13</div>
+      <div class="element ele14">14</div>
+      <div class="element ele15">15</div>
+      <div class="element ele16">16</div>
+      <div class="element ele17">17</div>
+      <div class="element ele18">18</div>
+      <div class="element ele19">19</div>
+    </div>
+</body>
+</html>
